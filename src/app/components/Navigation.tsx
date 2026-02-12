@@ -44,7 +44,7 @@ export function Navigation() {
 
       {/* Slide-out Menu */}
       <div
-        className={`fixed top-16 right-0 h-[calc(100vh-4rem)] w-64 bg-[#692528] shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-16 right-0 h-[calc(100vh-4rem)] w-64 bg-[#692528] shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
