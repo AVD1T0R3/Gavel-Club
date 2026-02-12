@@ -49,73 +49,95 @@ export function Constitution() {
           </h2>
           <div className="space-y-6">
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
-              <h3 className="text-xl text-[#692528] mb-2">
-                Article I: Name and Purpose
-              </h3>
+              <h3 className="text-xl text-[#692528] mb-2">Article 1: Name</h3>
               <p className="text-gray-700">
-                Establishes the official name of the club and outlines its
-                primary purpose of developing communication and leadership
-                skills among young people.
+                Establishes the official name of the club as the Kyambogo Gavel
+                Club (KGC) and confirms that it operates within Kyambogo
+                University.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article II: Membership
+                Article 2: Supremacy of the Constitution
               </h3>
               <p className="text-gray-700">
-                Defines membership eligibility, requirements, and the rights and
-                responsibilities of club members.
+                Declares the constitution as the supreme and binding authority of
+                the club. Any resolution, decision or policy inconsistent with
+                it must be brought into alignment with the constitution.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article III: Officers and Duties
+                Articles 3–6: Membership, Rights and Termination
               </h3>
               <p className="text-gray-700">
-                Outlines the officer positions, their election process, terms of
-                service, and specific responsibilities for each role.
+                Defines key terms and sets out who can be a member of KGC,
+                including standard, associate and honorary members. It explains
+                their rights and duties, how one becomes a member, and how
+                membership may be withdrawn or terminated.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article IV: Meetings
+                Articles 7–9: Leadership and Weekly Meetings
               </h3>
               <p className="text-gray-700">
-                Specifies meeting frequency, format, quorum requirements, and
-                procedures for conducting club business.
+                Describes the patron, executive committee and key leadership
+                roles, together with their responsibilities. It also details the
+                structure, format and purpose of the club&apos;s weekly meetings,
+                including the different roles members take on during a session.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article V: Committees
+                Articles 10–11: Elections and Resignations
               </h3>
               <p className="text-gray-700">
-                Describes the various committees within the club, their
-                purposes, and how they support club operations.
+                Sets out how executive members and honorary members are elected,
+                eligibility requirements for office, terms of service and how
+                vacancies are filled. It also explains how members of the
+                executive, including the President, may resign and how their
+                duties are reassigned.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article VI: Finances
+                Article 12: Finance and Audit
               </h3>
               <p className="text-gray-700">
-                Details membership dues, financial management practices, and
-                procedures for handling club funds.
+                Outlines the club&apos;s sources of funds, how money is banked and
+                managed, who may sign for withdrawals, and how financial records
+                are audited and reported to members.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
               <h3 className="text-xl text-[#692528] mb-2">
-                Article VII: Amendments
+                Article 13: Discipline and Dispute Resolution
               </h3>
               <p className="text-gray-700">
-                Outlines the process for proposing and ratifying amendments to
-                the constitution.
+                Provides procedures for suspension, dismissal, motions of
+                censure and votes of no confidence. It also sets out how
+                disputes among members and between members and the association
+                are to be mediated and, where necessary, referred to higher
+                university authorities.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-[#FAD45F] pl-6 py-2">
+              <h3 className="text-xl text-[#692528] mb-2">
+                Articles 14–15: Amendments and Interpretation
+              </h3>
+              <p className="text-gray-700">
+                Explains how the constitution can be amended by the general
+                meeting and the notice required for such changes. It also
+                clarifies who is responsible for interpreting the constitution
+                and how contested interpretations are resolved.
               </p>
             </div>
           </div>
