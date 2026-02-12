@@ -8,7 +8,7 @@ export function Home() {
       <div className="relative h-[500px] bg-[#692528] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1758270705518-b61b40527e76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwZ3JvdXAlMjBkaXNjdXNzaW9ufGVufDF8fHx8MTc3MDU5NTk1Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+          src="/Public/Images/Gavel.jpeg"
           alt="Gavel Club Members"
           className="absolute inset-0 w-full h-full object-cover"
         />

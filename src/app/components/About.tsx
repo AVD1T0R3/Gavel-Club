@@ -1,4 +1,4 @@
-import { History, Users, Mail } from 'lucide-react';
+import { History, Users, Mail } from "lucide-react";
 
 export function About() {
   return (
@@ -7,7 +7,7 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl mb-4">About Us</h1>
           <p className="text-xl text-[#E0F3FF]">
-            Empowering young leaders since our inception
+            Empowering young leaders in the art of Public Speaking
           </p>
         </div>
       </div>
@@ -19,18 +19,19 @@ export function About() {
             <div>
               <h2 className="text-3xl text-[#692528] mb-6">Who We Are</h2>
               <p className="text-gray-700 mb-4 text-lg">
-                Our Gavel Club is a youth leadership and communication program
-                designed to help young people develop essential skills in public
+                Gavel Club of Kyambogo is an organisation created with the aim
+                of helping young people develop essential skills in public
                 speaking, leadership, and critical thinking.
               </p>
               <p className="text-gray-700 mb-4">
-                As a Gavel Club, we provide a supportive environment where
-                members can practice and improve their communication skills
-                through prepared speeches, impromptu speaking, and evaluations.
+                As an affiliate of Toastmasters International, we provide a
+                supportive environment where members can practice and improve on
+                the art of public speaking through prepared speeches, impromptu
+                table topics, and speech evaluations.
               </p>
               <p className="text-gray-700">
-                Our club welcomes students and young professionals who are eager
-                to grow personally and professionally while building lasting
+                We welcome students and young professionals who are eager to
+                grow personally and professionally while building lasting
                 friendships with like-minded individuals.
               </p>
             </div>
@@ -54,7 +55,9 @@ export function About() {
                     <Users size={24} className="text-[#692528]" />
                   </div>
                   <div>
-                    <h3 className="text-xl text-[#692528] mb-2">Our Community</h3>
+                    <h3 className="text-xl text-[#692528] mb-2">
+                      Our Community
+                    </h3>
                     <p className="text-gray-700">
                       A diverse group of passionate individuals dedicated to
                       personal growth and supporting each other's journey.
@@ -71,18 +74,18 @@ export function About() {
           <div className="bg-[#692528] text-white p-8 rounded-lg">
             <h2 className="text-2xl mb-4 text-[#FAD45F]">Our Mission</h2>
             <p className="text-[#E0F3FF]">
-              To provide a supportive and positive learning environment in which
-              every member has the opportunity to develop communication and
-              leadership skills, which in turn foster self-confidence and
-              personal growth.
+              To empower individuals by fostering a supportive environment to
+              develop public speaking, communication, and leadership skills.
+              Thereby boosting self-confidence, encouraging personal growth, and
+              helping members become effective leaders and communicators.
             </p>
           </div>
           <div className="bg-[#E0F3FF] p-8 rounded-lg">
             <h2 className="text-2xl text-[#692528] mb-4">Our Vision</h2>
             <p className="text-gray-700">
-              To be the premier youth organization where young people learn to
-              become confident communicators and effective leaders who can
-              positively impact their communities and the world.
+              We provide a supportive and positive learning experience in which
+              members are empowered to develop communication and leadership
+              skills, resulting in greater self-confidence and personal growth.
             </p>
           </div>
         </div>
@@ -94,10 +97,24 @@ export function About() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { title: 'Respect', description: 'We honor each member\'s unique perspective and journey' },
-              { title: 'Growth', description: 'We encourage continuous learning and development' },
-              { title: 'Excellence', description: 'We strive for quality in everything we do' },
-              { title: 'Support', description: 'We create a nurturing environment for all members' }
+              {
+                title: "Respect",
+                description:
+                  "We honor each member's unique perspective and journey",
+              },
+              {
+                title: "Growth",
+                description: "We encourage continuous learning and development",
+              },
+              {
+                title: "Excellence",
+                description: "We strive for quality in everything we do",
+              },
+              {
+                title: "Support",
+                description:
+                  "We create a nurturing environment for all members",
+              },
             ].map((value, index) => (
               <div
                 key={index}
@@ -118,9 +135,12 @@ export function About() {
             Interested in joining or learning more about our club? We'd love to
             hear from you!
           </p>
-          <button className="bg-[#FAD45F] text-[#692528] px-8 py-3 rounded-lg hover:bg-[#f5ca3d] transition-colors">
-            Contact Us
-          </button>
+          <a
+              href="/contact"
+              className="inline-block bg-[#FAD45F] text-[#692528] px-8 py-3 rounded-lg hover:bg-[#f5ca3d] transition-colors"
+            >
+              Contact Us
+            </a>
         </div>
       </div>
     </div>
