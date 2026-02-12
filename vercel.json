@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "//": "Ensure all client-side routes for this Vite + React SPA are served by index.html, while allowing static assets and special files to be served directly.",
   "rewrites": [
     {
       "source": "/:path((?!assets/|Public/|api/|favicon.ico|robots.txt|sitemap.xml).*)",
