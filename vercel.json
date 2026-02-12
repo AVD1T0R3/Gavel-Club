@@ -1,0 +1,9 @@
+{
+  "//": "Ensure all client-side routes are served by index.html for this Vite + React SPA.",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

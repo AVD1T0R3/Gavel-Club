@@ -16,7 +16,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-
+  // Ensure Vite treats the capitalized Public folder as the public directory.
+  // This matters on case-sensitive filesystems like Vercel's Linux environment.
+  publicDir: "Public",
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ["**/*.svg", "**/*.csv"],
 });
