@@ -21,7 +21,7 @@ export function Constitution() {
           <CardHeader className="bg-[#E0F3FF]">
             <CardTitle className="flex items-center gap-3 text-[#692528] text-2xl">
               <FileText size={32} />
-              Download Constitution
+              Download the Gavel Club Constitution
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
@@ -36,7 +36,7 @@ export function Constitution() {
               className="inline-flex items-center gap-2 bg-[#692528] text-white px-6 py-3 rounded-lg hover:bg-[#8a3033] transition-colors"
             >
               <Download size={20} />
-              Download PDF
+              Download Constitution (PDF)
             </a>
           </CardContent>
         </Card>
