@@ -65,11 +65,11 @@ export function Contact() {
             <CardContent className="text-center">
               <p className="text-gray-600 mb-2">Club President:</p>
               <a href="tel:+1234567890" className="text-[#692528] hover:text-[#8a3033]">
-                +1 (234) 567-890
+                0700 123 456
               </a>
-              <p className="text-gray-600 mt-4 mb-2">Membership VP:</p>
+              <p className="text-gray-600 mt-4 mb-2">Vice President-Membership :</p>
               <a href="tel:+1234567891" className="text-[#692528] hover:text-[#8a3033]">
-                +1 (234) 567-891
+                0700 123 456
               </a>
             </CardContent>
           </Card>
@@ -194,13 +194,12 @@ export function Contact() {
               </h3>
               <p className="text-gray-700">
                 You can attend one of our meetings as a guest to see if our club
-                is the right fit for you. After that, simply fill out a
-                membership form and pay the membership dues.
+                is the right fit for you. After that, simply maintain regular attendance and when prompted, pay the membership dues.
               </p>
             </div>
             <div>
               <h3 className="text-lg text-[#692528] mb-2">
-                What are the membership fees?
+                How much are the membership fees?
               </h3>
               <p className="text-gray-700">
                 Our membership fees are UGX.5000 per semester, which covers meeting
@@ -213,7 +212,7 @@ export function Contact() {
               </h3>
               <p className="text-gray-700">
                 Not at all! Our club welcomes members of all skill levels, from
-                complete beginners to experienced speakers. We're here to support
+                complete novices to experienced speakers. We're here to support
                 your growth.
               </p>
             </div>
