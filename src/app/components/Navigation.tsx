@@ -23,8 +23,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-3">
-            <Logo size={28} />
-            <span className="text-xl font-bold">Gavel Club</span>
+            <img
+                src="Public/Icons/logo.png"
+                class="w-15 h-auto"
+                alt="Kyu_Gavel_Logo"
+              />
+            <span className="text-xl font-bold">Gavel Club of Kyambogo</span>
           </Link>
 
           {/* Hamburger Menu Button */}

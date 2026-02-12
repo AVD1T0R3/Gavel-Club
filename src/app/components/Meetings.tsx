@@ -110,7 +110,8 @@ export function Meetings() {
               <Calendar size={32} className="text-[#FAD45F]" />
               <div>
                 <h3 className="text-2xl text-[#692528]">Weekly Meetings</h3>
-                <p className="text-gray-600">Every Tuesday, 6:30 PM - 8:30 PM</p>
+                <p className="text-gray-600">Every Tuesday, 5:00 PM - 7:00 PM</p>
+                <p className="text-gray-600"><strong>Location: </strong>RAC F</p>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export function Home() {
         <div className="relative z-20 h-full flex items-center justify-center text-center px-4">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl text-white mb-4">
-              Welcome to Our Gavel Club
+              Gavel Club Of Kyambogo University
             </h1>
             <p className="text-xl md:text-2xl text-[#FAD45F] mb-8">
               Building Leaders Through Communication and Leadership Skills
@@ -24,7 +24,7 @@ export function Home() {
               href="/about"
               className="inline-block bg-[#FAD45F] text-[#692528] px-8 py-3 rounded-lg hover:bg-[#f5ca3d] transition-colors"
             >
-              Learn More About Us
+              Learn More
             </a>
           </div>
         </div>

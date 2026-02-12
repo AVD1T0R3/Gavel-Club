@@ -83,13 +83,9 @@ export function Contact() {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-gray-700 mb-2">We meet every Tuesday</p>
-              <p className="text-gray-600 mb-2">6:30 PM - 8:30 PM</p>
+              <p className="text-gray-600 mb-2">5:00 PM - 7:00 PM</p>
               <p className="text-gray-600">
-                Community Center
-                <br />
-                123 Main Street
-                <br />
-                Your City, ST 12345
+                RAC F
               </p>
             </CardContent>
           </Card>
@@ -207,7 +203,7 @@ export function Contact() {
                 What are the membership fees?
               </h3>
               <p className="text-gray-700">
-                Our membership fees are $50 per semester, which covers meeting
+                Our membership fees are UGX.5000 per semester, which covers meeting
                 materials, educational resources, and club activities.
               </p>
             </div>

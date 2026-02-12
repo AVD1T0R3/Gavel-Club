@@ -1,30 +1,37 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Logo } from './Logo';
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Youtube,
+  Mail,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { Logo } from "./Logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
+    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
   ];
 
   const quickLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About Us' },
-    { path: '/meetings', label: 'Meetings' },
-    { path: '/contact', label: 'Contact' },
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About Us" },
+    { path: "/meetings", label: "Meetings" },
+    { path: "/contact", label: "Contact" },
   ];
 
   const resourceLinks = [
-    { path: '/blogs', label: 'Blog' },
-    { path: '/cabinets', label: 'Cabinets' },
-    { path: '/constitution', label: 'Constitution' },
-    { path: '/roles', label: 'Roles' },
+    { path: "/blogs", label: "Blog" },
+    { path: "/cabinets", label: "Cabinets" },
+    { path: "/constitution", label: "Constitution" },
+    { path: "/roles", label: "Roles" },
   ];
 
   return (
@@ -34,8 +41,15 @@ export function Footer() {
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <Logo size={32} />
-              <h3 className="text-2xl text-[#FAD45F]">Gavel Club</h3>
+              <img
+                src="Public/Icons/logo.png"
+                class="w-20 h-auto"
+                alt="Kyu_Gavel_Logo"
+              />
+              <br />{" "}
+              <h3 className="text-2xl text-[#FAD45F]">
+                Gavel Club of Kyambogo
+              </h3>
             </div>
             <p className="text-[#E0F3FF] mb-4">
               Empowering young leaders to develop communication and leadership
@@ -43,7 +57,10 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-[#E0F3FF]">
               <Mail size={18} />
-              <a href="mailto:info@gavelclub.org" className="hover:text-[#FAD45F] transition-colors">
+              <a
+                href="mailto:info@gavelclub.org"
+                className="hover:text-[#FAD45F] transition-colors"
+              >
                 info@gavelclub.org
               </a>
             </div>
@@ -88,9 +105,9 @@ export function Footer() {
         <div className="border-t border-[#8a3033] pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#E0F3FF] text-sm">
-              © {currentYear} Gavel Club. All rights reserved.
+              © {currentYear} Gavel Club of Kyambogo. <br /> All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-4">
               <span className="text-[#E0F3FF] text-sm">Follow us:</span>
               <div className="flex gap-3">
