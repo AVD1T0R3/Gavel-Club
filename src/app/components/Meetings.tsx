@@ -1,94 +1,128 @@
-import { Clock, Users, MessageSquare, Award, CheckCircle, Calendar } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import {
+  Clock,
+  Users,
+  MessageSquare,
+  Award,
+  CheckCircle,
+  Calendar,
+  Share2,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export function Meetings() {
   const schedule = [
     {
-      time: '6:30 PM - 6:40 PM',
-      duration: '10 min',
-      activity: 'Opening & Introductions',
+      time: "6:30 PM - 6:40 PM",
+      duration: "10 min",
+      activity: "Opening & Introductions",
       icon: Users,
-      description: 'Meeting called to order, guests introduced, and meeting roles announced.',
+      description:
+        "Meeting called to order, guests introduced, and meeting roles announced.",
     },
     {
-      time: '6:40 PM - 7:00 PM',
-      duration: '20 min',
-      activity: 'Table Topics Session',
-      icon: MessageSquare,
-      description: 'Impromptu speaking practice where members respond to surprise questions, developing quick thinking skills.',
-    },
-    {
-      time: '7:00 PM - 7:40 PM',
-      duration: '40 min',
-      activity: 'Prepared Speeches',
+      time: "7:00 PM - 7:40 PM",
+      duration: "40 min",
+      activity: "Icebreaker Speech",
       icon: Award,
-      description: 'Members deliver prepared speeches (5-7 minutes each) to practice and showcase their speaking skills.',
+      description: "5-minute speech to practice and showcase speaking skills.",
     },
     {
-      time: '7:40 PM - 8:10 PM',
-      duration: '30 min',
-      activity: 'Evaluations',
+      time: "6:40 PM - 7:00 PM",
+      duration: "5 min",
+      activity: "Break Session",
+      icon: Share2,
+      description: "Short break to allow for interactions between club members",
+    },
+    {
+      time: "7:00 PM - 7:40 PM",
+      duration: "40 min",
+      activity: "Prepared Speech",
+      icon: Award,
+      description: "9-minute speech in line with the topic of the day.",
+    },
+    {
+      time: "6:40 PM - 7:00 PM",
+      duration: "20 min",
+      activity: "Table Topics Session",
+      icon: MessageSquare,
+      description:
+        "Impromptu speaking practice where members respond to surprise questions, developing quick thinking skills.",
+    },
+    {
+      time: "7:40 PM - 8:10 PM",
+      duration: "30 min",
+      activity: "Role-taker Evaluations",
       icon: CheckCircle,
-      description: 'Evaluators provide constructive feedback on speeches, helping speakers improve and grow.',
+      description:
+        "Hark Master, speech evaluators and the various role takers give their input and feedback during the alloted time, providing constructive feedback on speeches, helping speakers and the general audience improve and grow.",
     },
     {
-      time: '8:10 PM - 8:25 PM',
-      duration: '15 min',
-      activity: 'Reports & Business',
+      time: "8:10 PM - 8:25 PM",
+      duration: "15 min",
+      activity: "General Evaluation",
       icon: Calendar,
-      description: 'General Evaluator provides overall meeting feedback, reports from officers, and club announcements.',
+      description:
+        "General Evaluator provides overall meeting feedback, reports from officers, and club announcements and AOB.",
     },
     {
-      time: '8:25 PM - 8:30 PM',
-      duration: '5 min',
-      activity: 'Closing Remarks',
+      time: "8:25 PM - 8:30 PM",
+      duration: "5 min",
+      activity: "Closing Remarks and photo session",
       icon: Clock,
-      description: 'President shares final thoughts and adjourns the meeting.',
+      description: "President shares final thoughts and adjourns the meeting with a photo session.",
     },
   ];
 
-  const meetingRoles = [
-    {
-      role: 'Toastmaster',
-      description: 'Serves as the master of ceremonies, introduces speakers, and keeps the meeting flowing smoothly.',
-    },
-    {
-      role: 'Table Topics Master',
-      description: 'Prepares and asks impromptu speaking questions to help members practice thinking on their feet.',
-    },
-    {
-      role: 'Speakers',
-      description: 'Deliver prepared speeches based on educational pathways to develop specific skills.',
-    },
-    {
-      role: 'Evaluators',
-      description: 'Provide constructive feedback to speakers, highlighting strengths and areas for improvement.',
-    },
-    {
-      role: 'General Evaluator',
-      description: 'Evaluates the entire meeting, including all functional roles and overall meeting quality.',
-    },
-    {
-      role: 'Timer',
-      description: 'Tracks speaking times and signals speakers to help them stay within time limits.',
-    },
-    {
-      role: 'Ah-Counter',
-      description: 'Counts filler words and repetitive phrases to help members become aware of their speech patterns.',
-    },
-    {
-      role: 'Grammarian',
-      description: 'Introduces a word of the day and notes outstanding language usage throughout the meeting.',
-    },
-  ];
+  // const meetingRoles = [
+  //   {
+  //     role: "Toastmaster",
+  //     description:
+  //       "Serves as the master of ceremonies, introduces speakers, and keeps the meeting flowing smoothly.",
+  //   },
+  //   {
+  //     role: "Table Topics Master",
+  //     description:
+  //       "Prepares and asks impromptu speaking questions to help members practice thinking on their feet.",
+  //   },
+  //   {
+  //     role: "Speakers",
+  //     description:
+  //       "Deliver prepared speeches based on educational pathways to develop specific skills.",
+  //   },
+  //   {
+  //     role: "Evaluators",
+  //     description:
+  //       "Provide constructive feedback to speakers, highlighting strengths and areas for improvement.",
+  //   },
+  //   {
+  //     role: "General Evaluator",
+  //     description:
+  //       "Evaluates the entire meeting, including all functional roles and overall meeting quality.",
+  //   },
+  //   {
+  //     role: "Timer",
+  //     description:
+  //       "Tracks speaking times and signals speakers to help them stay within time limits.",
+  //   },
+  //   {
+  //     role: "Ah-Counter",
+  //     description:
+  //       "Counts filler words and repetitive phrases to help members become aware of their speech patterns.",
+  //   },
+  //   {
+  //     role: "Grammarian",
+  //     description:
+  //       "Introduces a word of the day and notes outstanding language usage throughout the meeting.",
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen bg-[#E0F3FF]/30">
       <div className="bg-[#692528] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-4">Meeting Format</h1>
+          <h1 className="text-4xl md:text-5xl mb-4">Weekly Meetings</h1>
           <p className="text-xl text-[#E0F3FF]">
-            Discover what happens at our club meetings
+            A typical rundown of our club meetings
           </p>
         </div>
       </div>
@@ -97,11 +131,13 @@ export function Meetings() {
         {/* Meeting Overview */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl text-[#692528] mb-4">Our Meeting Structure</h2>
+            <h2 className="text-3xl text-[#692528] mb-4">
+              Our Meeting Structure
+            </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Every meeting follows a carefully designed format that maximizes
-              learning opportunities while keeping things fun and engaging. Here's
-              what you can expect when you attend one of our meetings.
+              learning opportunities while keeping things fun and engaging.
+              Here's what you can expect when you attend one of our meetings.
             </p>
           </div>
 
@@ -110,8 +146,12 @@ export function Meetings() {
               <Calendar size={32} className="text-[#FAD45F]" />
               <div>
                 <h3 className="text-2xl text-[#692528]">Weekly Meetings</h3>
-                <p className="text-gray-600">Every Tuesday, 5:00 PM - 7:00 PM</p>
-                <p className="text-gray-600"><strong>Location: </strong>RAC F</p>
+                <p className="text-gray-600">
+                  Every Tuesday, 5:00 PM - 7:00 PM
+                </p>
+                <p className="text-gray-600">
+                  <strong>Location: </strong>RAC F
+                </p>
               </div>
             </div>
           </div>
@@ -141,10 +181,10 @@ export function Meetings() {
                             {item.activity}
                           </h3>
                           <div className="flex items-center gap-3 text-sm text-gray-600">
-                            <span className="bg-[#E0F3FF] px-3 py-1 rounded-full">
+                            {/* <span className="bg-[#E0F3FF] px-3 py-1 rounded-full">
                               {item.duration}
                             </span>
-                            <span>{item.time}</span>
+                            <span>{item.time}</span> */}
                           </div>
                         </div>
                         <p className="text-gray-700">{item.description}</p>
@@ -159,15 +199,20 @@ export function Meetings() {
 
         {/* Meeting Roles */}
         <div className="mb-16">
-          <h2 className="text-3xl text-[#692528] mb-8 text-center">
-            Meeting Roles
-          </h2>
-          <p className="text-lg text-gray-700 text-center mb-8 max-w-3xl mx-auto">
-            Each meeting features various roles that members can volunteer for.
-            These roles provide hands-on learning opportunities and help develop
-            specific skills.
+          {/* Call to Action */}
+        <div className="bg-gradient-to-r from-[#692528] to-[#8a3033] text-white p-8 rounded-lg text-center">
+          <h2 className="text-2xl mb-4">Meeting Roles</h2>
+          <p className="text-[#E0F3FF] mb-6 max-w-2xl mx-auto">
+            Each meeting features various roles that members can volunteer for. These roles provide hands-on learning opportunities and help develop specific skills.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a
+            href="/roles"
+            className="inline-block bg-[#FAD45F] text-[#692528] px-8 py-3 rounded-lg hover:bg-[#f5ca3d] transition-colors"
+          >
+            Check out the Meeting Roles
+          </a>
+        </div>
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {meetingRoles.map((item, index) => (
               <Card
                 key={index}
@@ -181,7 +226,7 @@ export function Meetings() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* What to Expect */}
@@ -240,8 +285,8 @@ export function Meetings() {
         <div className="bg-gradient-to-r from-[#692528] to-[#8a3033] text-white p-8 rounded-lg text-center">
           <h2 className="text-2xl mb-4">Ready to Experience a Meeting?</h2>
           <p className="text-[#E0F3FF] mb-6 max-w-2xl mx-auto">
-            Come visit us and see what a Gavel Club meeting is all about. We meet
-            every Tuesday evening and guests are always welcome!
+            Come visit us and see what a Gavel Club meeting is all about. We
+            meet every Tuesday evening and guests are always welcome!
           </p>
           <a
             href="/contact"

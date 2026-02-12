@@ -1,116 +1,208 @@
-import { Clock, BookOpen, Lightbulb, Users, CheckSquare, Volume2, Star, Megaphone } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import {
+  Clock,
+  BookOpen,
+  Lightbulb,
+  Users,
+  CheckSquare,
+  Volume2,
+  Star,
+  Megaphone,
+  BrainCircuit,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const meetingRoles = [
   {
-    title: 'Toastmaster of the Day',
+    title: "Toastmaster of the Day",
     icon: Megaphone,
-    description: 'The master of ceremonies who conducts the meeting and ensures smooth flow.',
+    description:
+      "The master of ceremonies who conducts the meeting and ensures smooth flow. Introduces theme of the day.",
     responsibilities: [
-      'Open and close the meeting',
-      'Introduce all speakers and role-takers',
-      'Maintain energy and enthusiasm',
-      'Keep the meeting on schedule',
-      'Create transitions between segments',
+      "Open and close the meeting",
+      "Introduce all speakers and role-takers",
+      "Maintain energy and enthusiasm",
+      "Keep the meeting on schedule",
+      "Create transitions between segments",
     ],
-    skills: ['Public Speaking', 'Time Management', 'Energy Management', 'Improvisation'],
-    duration: 'Throughout meeting',
+    skills: [
+      "Public Speaking",
+      "Time Management",
+      "Energy Management",
+      "Improvisation",
+    ],
+    duration: "Throughout meeting",
   },
   {
-    title: 'Timekeeper',
+    title: "Timekeeper",
     icon: Clock,
-    description: 'Tracks and signals speaking times to help speakers stay within limits.',
+    description:
+      "Tracks and signals speaking times to help speakers stay within limits.",
     responsibilities: [
-      'Time all speakers and evaluators',
-      'Display timing signals (green, yellow, red)',
-      'Record exact times for each speaker',
-      'Report timing summary at end of meeting',
+      "Time all speakers and evaluators",
+      "Display timing signals (green, yellow, red)",
+      "Record exact times for each speaker",
+      "Report timing summary at end of meeting",
     ],
-    skills: ['Attention to Detail', 'Organization', 'Time Management', 'Reliability'],
-    duration: 'Throughout meeting',
+    skills: [
+      "Attention to Detail",
+      "Organization",
+      "Time Management",
+      "Reliability",
+    ],
+    duration: "Throughout meeting",
   },
   {
-    title: 'Grammarian',
+    title: "Grammarian",
     icon: BookOpen,
-    description: 'Introduces a word of the day and notes outstanding language usage.',
+    description:
+      "Introduces a word of the day and notes outstanding language usage.",
     responsibilities: [
-      'Choose and introduce word of the day',
-      'Track usage of the word',
-      'Note excellent word choices',
-      'Identify grammatical errors tactfully',
-      'Provide language report',
+      "Choose and introduce word of the day",
+      "Track usage of the word",
+      "Note excellent word choices",
+      "Identify grammatical errors tactfully",
+      "Provide language report",
     ],
-    skills: ['Vocabulary', 'Attention to Detail', 'Language Skills', 'Listening'],
-    duration: 'Throughout meeting',
+    skills: [
+      "Vocabulary",
+      "Attention to Detail",
+      "Language Skills",
+      "Listening",
+    ],
+    duration: "Throughout meeting",
   },
   {
-    title: 'Ah-Counter',
+    title: "Ah-Counter",
     icon: Volume2,
-    description: 'Counts filler words and sounds to increase speaker awareness.',
+    description:
+      "Counts filler words and sounds to increase speaker awareness.",
     responsibilities: [
-      'Track filler words (um, ah, like, you know)',
-      'Note repetitive phrases',
-      'Count long pauses and verbal crutches',
-      'Provide ah-counter report',
+      "Track filler words (um, ah, like, you know)",
+      "Note repetitive phrases",
+      "Count long pauses and verbal crutches",
+      "Provide ah-counter report",
     ],
-    skills: ['Active Listening', 'Concentration', 'Pattern Recognition', 'Diplomacy'],
-    duration: 'Throughout meeting',
+    skills: [
+      "Active Listening",
+      "Concentration",
+      "Pattern Recognition",
+      "Diplomacy",
+    ],
+    duration: "Throughout meeting",
   },
   {
-    title: 'Table Topics Master',
+    title: "Hark Master",
+    icon: BrainCircuit,
+    description:
+      "Checks the listening skills of the audience through asking random questions about statements and phrases made by people who participated in the meeting.",
+    responsibilities: [
+      "Prepare interesting questions for the audience",
+      "Listen to all the speakers before them",
+      "Invite the audience to answer comprehension questions",
+      "Keep session engaging and fun",
+      "Test the audience's listening skills",
+    ],
+    skills: [
+      "Listening",
+      "Creativity",
+      "Facilitation",
+      "Spontaneity",
+      "Engagement",
+    ],
+    duration: "Throughout Meeting",
+  },
+  {
+    title: "Table Topics Master",
     icon: Lightbulb,
-    description: 'Conducts the impromptu speaking session with thought-provoking questions.',
+    description:
+      "Conducts the impromptu speaking session with thought-provoking questions.",
     responsibilities: [
-      'Prepare interesting table topics questions',
-      'Create a theme or connection between topics',
-      'Invite participants to speak',
-      'Keep session engaging and fun',
-      'Manage timing (1-2 minutes per speaker)',
+      "Prepare interesting table topics questions",
+      "Create a theme or connection between topics",
+      "Invite participants to speak",
+      "Keep session engaging and fun",
+      "Manage timing (1-2 minutes per speaker)",
     ],
-    skills: ['Creativity', 'Facilitation', 'Spontaneity', 'Engagement'],
-    duration: '15-20 minutes',
+    skills: ["Creativity", "Facilitation", "Spontaneity", "Engagement"],
+    duration: "Throughout Meeting",
   },
   {
-    title: 'General Evaluator',
+    title: "General Evaluator",
     icon: Star,
-    description: 'Evaluates the entire meeting and coordinates the evaluation team.',
+    description:
+      "Evaluates the entire meeting and coordinates the evaluation team.",
     responsibilities: [
-      'Oversee all evaluation roles',
-      'Provide overall meeting assessment',
-      'Note what worked well in the meeting',
-      'Suggest improvements for future meetings',
-      'Introduce and thank evaluators',
+      "Oversee all evaluation roles",
+      "Provide overall meeting assessment",
+      "Note what worked well in the meeting",
+      "Suggest improvements for future meetings",
+      "Introduce and thank evaluators",
     ],
-    skills: ['Critical Thinking', 'Leadership', 'Comprehensive Analysis', 'Constructive Feedback'],
-    duration: '3-5 minutes',
+    skills: [
+      "Critical Thinking",
+      "Leadership",
+      "Comprehensive Analysis",
+      "Constructive Feedback",
+    ],
+    duration: "Throughout Meeting",
   },
   {
-    title: 'Speech Evaluator',
+    title: "Speech Evaluators",
     icon: CheckSquare,
-    description: 'Provides constructive feedback on prepared speeches.',
+    description: "Provide constructive feedback on prepared speeches.",
     responsibilities: [
-      'Listen carefully to assigned speech',
-      'Note strengths and areas for improvement',
-      'Provide balanced, specific feedback',
-      'Deliver 2-3 minute evaluation',
-      'Encourage and motivate the speaker',
+      "Listen carefully to assigned speech",
+      "Note strengths and areas for improvement",
+      "Provide balanced, specific feedback",
+      "Deliver 2-3 minute evaluation",
+      "Encourage and motivate the speaker",
     ],
-    skills: ['Active Listening', 'Constructive Criticism', 'Public Speaking', 'Analytical Thinking'],
-    duration: '2-3 minutes per evaluation',
+    skills: [
+      "Active Listening",
+      "Constructive Criticism",
+      "Public Speaking",
+      "Analytical Thinking",
+    ],
+    duration: "Throughout Meeting (2-3 minutes per evaluation)",
   },
   {
-    title: 'Prepared Speaker',
+    title: "Icebreaker Speech Taker",
     icon: Users,
-    description: 'Delivers a prepared speech based on educational pathways.',
+    description:
+      "Delivers an impromptu speech to open the speech session. It may or may not be in line with the topic of the day",
     responsibilities: [
-      'Prepare speech according to project objectives',
-      'Practice and time the speech',
-      'Deliver engaging presentation',
-      'Apply feedback from previous speeches',
-      'Work on specific skill development',
+      "Prepare an impromptu speech for the audience",
+      "Practice and time the speech",
+      "Deliver engaging presentation",
+      "Apply feedback from previous speeches (If it is not their first time speaking)",
+      "Work on developing public speaking skills",
     ],
-    skills: ['Public Speaking', 'Organization', 'Storytelling', 'Confidence Building'],
-    duration: '5-7 minutes',
+    skills: [
+      "Public Speaking",
+      "Organization",
+      "Storytelling",
+      "Confidence Building",
+    ],
+    duration: "5 minutes",
+  },
+  {
+    title: "Prepared Spech Taker",
+    icon: Users,
+    description: "Delivers a prepared speech based on Topic of the day.",
+    responsibilities: [
+      "Prepare speech according to topic of the day",
+      "Practice and time the speech",
+      "Deliver engaging presentation",
+      "Apply feedback from previous speeches",
+      "Work on developing public speaking skills",
+    ],
+    skills: [
+      "Public Speaking",
+      "Organization",
+      "Storytelling",
+      "Confidence Building",
+    ],
+    duration: "9 minutes",
   },
 ];
 
@@ -121,7 +213,7 @@ export function Roles() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl mb-4">Meeting Roles</h1>
           <p className="text-xl text-[#E0F3FF]">
-            Hands-on learning opportunities at every meeting
+            Every meeting is an opportunity to better your public speaking skills
           </p>
         </div>
       </div>
@@ -129,10 +221,10 @@ export function Roles() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="mb-12 text-center max-w-3xl mx-auto">
           <p className="text-lg text-gray-700">
-            Each meeting features various roles that members can volunteer for.
-            These roles provide practical experience and help develop specific
-            communication and leadership skills. Every role is important and
-            contributes to a successful meeting.
+            During the course of each meeting, there are various roles which you, as a Gavel Club
+            member, can volunteer for. These roles provide practical experience
+            and help develop your communication, leadership and public speaking skills. Every
+            role is important and contributes to the overall success of the meeting.
           </p>
         </div>
 
@@ -162,10 +254,15 @@ export function Roles() {
                   <p className="text-gray-700 mb-4">{role.description}</p>
 
                   <div className="mb-4">
-                    <h4 className="text-[#692528] mb-2">Key Responsibilities:</h4>
+                    <h4 className="text-[#692528] mb-2">
+                      Key Responsibilities:
+                    </h4>
                     <ul className="space-y-1">
                       {role.responsibilities.map((resp, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-sm text-gray-600"
+                        >
                           <span className="text-[#FAD45F] mt-1">•</span>
                           <span>{resp}</span>
                         </li>
@@ -200,11 +297,13 @@ export function Roles() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="border-2 border-[#692528]/10 text-center">
               <CardHeader>
-                <CardTitle className="text-[#692528]">Practice Makes Progress</CardTitle>
+                <CardTitle className="text-[#692528]">
+                  Practice Makes Perfect
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Every role you take helps you develop new skills and gain
+                  Every role you take helps you sharpen your skills and gain
                   confidence. The more roles you try, the more well-rounded you
                   become as a communicator and leader.
                 </p>
@@ -213,20 +312,24 @@ export function Roles() {
 
             <Card className="border-2 border-[#692528]/10 text-center">
               <CardHeader>
-                <CardTitle className="text-[#692528]">Low-Pressure Learning</CardTitle>
+                <CardTitle className="text-[#692528]">
+                  Low-Pressure Learning
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Our meetings provide a supportive environment where you can try
-                  new things without high stakes. It's okay to make mistakes—
-                  that's how we learn and grow.
+                  Our meetings provide a supportive environment where you can
+                  try new things without high stakes. It's okay to make
+                  mistakes— that's how we learn and grow.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-2 border-[#692528]/10 text-center">
               <CardHeader>
-                <CardTitle className="text-[#692528]">Immediate Feedback</CardTitle>
+                <CardTitle className="text-[#692528]">
+                  Immediate Feedback
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
@@ -251,8 +354,8 @@ export function Roles() {
               </div>
               <h3 className="text-[#692528] mb-2">Start Simple</h3>
               <p className="text-sm text-gray-600">
-                Begin with roles like Timekeeper or Ah-Counter to get comfortable
-                with meeting participation.
+                Begin with roles like Timekeeper, Grammarian or Ah-Counter to get
+                comfortable with meeting participation.
               </p>
             </div>
             <div className="text-center">
@@ -261,8 +364,8 @@ export function Roles() {
               </div>
               <h3 className="text-[#692528] mb-2">Volunteer Early</h3>
               <p className="text-sm text-gray-600">
-                Sign up for roles in advance so you have time to prepare and feel
-                confident.
+                Sign up for roles in advance so you have time to prepare and
+                feel confident.
               </p>
             </div>
             <div className="text-center">
@@ -281,8 +384,8 @@ export function Roles() {
               </div>
               <h3 className="text-[#692528] mb-2">Reflect & Improve</h3>
               <p className="text-sm text-gray-600">
-                After each role, think about what went well and what you'd like to
-                improve next time.
+                After each role, think about what went well and what you'd like
+                to improve next time.
               </p>
             </div>
           </div>
