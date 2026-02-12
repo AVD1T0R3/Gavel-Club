@@ -1,5 +1,5 @@
-import { Users, Target, Award } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Users, Target, Award } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export function Home() {
   return (
@@ -18,7 +18,7 @@ export function Home() {
               Gavel Club Of Kyambogo University
             </h1>
             <p className="text-xl md:text-2xl text-[#FAD45F] mb-8">
-              Building Leaders Through Communication and Leadership Skills
+              <i>"Where Leaders are made!"</i>
             </p>
             <a
               href="/about"
