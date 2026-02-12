@@ -2,12 +2,7 @@ import { Download, FileText, BookOpen } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export function Constitution() {
-  const handleDownload = () => {
-    // In a real application, this would download the actual PDF file
-    alert(
-      "Constitution download would start here. Please contact the club administrator for the actual document.",
-    );
-  };
+  const constitutionPdfUrl = "/documents/Gavel Club of Kyambogo_Constitution.pdf";
 
   return (
     <div className="min-h-screen bg-white">
@@ -35,13 +30,14 @@ export function Constitution() {
               procedures of our Gavel Club. It serves as the foundation for all
               club activities and decisions.
             </p>
-            <button
-              onClick={handleDownload}
-              className="bg-[#692528] text-white px-6 py-3 rounded-lg hover:bg-[#8a3033] transition-colors flex items-center gap-2"
+            <a
+              href={constitutionPdfUrl}
+              download
+              className="inline-flex items-center gap-2 bg-[#692528] text-white px-6 py-3 rounded-lg hover:bg-[#8a3033] transition-colors"
             >
               <Download size={20} />
               Download PDF
-            </button>
+            </a>
           </CardContent>
         </Card>
 

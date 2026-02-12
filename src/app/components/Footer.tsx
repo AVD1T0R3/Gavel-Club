@@ -13,11 +13,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+    { icon: Twitter, href: "http://x.com/GavelKyu", label: "Twitter" },
+
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/kyambogo-gavel/",
+      label: "LinkedIn",
+    },
   ];
 
   const quickLinks = [
@@ -42,8 +44,8 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="Public/Icons/logo.png"
-                class="w-20 h-auto"
+                src="/Icons/logo.png"
+                className="w-20 h-auto"
                 alt="Kyu_Gavel_Logo"
               />
               <br />{" "}
@@ -101,14 +103,18 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Social Media Links */}
+        {/* Social Media Links & Copyright */}
         <div className="border-t border-[#8a3033] pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[#E0F3FF] text-sm">
-              © {currentYear} Gavel Club of Kyambogo. <br /> All rights reserved.
+            <p className="text-[#E0F3FF] text-sm order-2 md:order-1 text-center md:text-left">
+              © {currentYear} Gavel Club of Kyambogo. <br /> All rights
+              reserved.
+              <br />
+              Powered by{" "}
+              <strong className="text-[#d6ab00]">The Design Lab</strong>
             </p>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 order-1 md:order-2">
               <span className="text-[#E0F3FF] text-sm">Follow us:</span>
               <div className="flex gap-3">
                 {socialLinks.map((social) => {
