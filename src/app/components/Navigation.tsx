@@ -24,7 +24,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-3">
             <img
-                src="Public/Icons/logo.png"
+                src="/Icons/logo.png"
                 class="w-15 h-auto"
                 alt="Kyu_Gavel_Logo"
               />

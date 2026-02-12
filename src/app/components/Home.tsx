@@ -8,8 +8,8 @@ export function Home() {
       <div className="relative h-[500px] bg-[#692528] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <img
-          src="/Public/Images/Gavel.jpeg"
-          alt="Gavel Club Members"
+          src="/Images/Gavel.jpeg"
+          alt="Gavel_Hero Image"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 h-full flex items-center justify-center text-center px-4">
