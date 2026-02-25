@@ -107,9 +107,9 @@ const blogPosts = [
     title: 'Building Confidence Through Evaluation',
     excerpt:
       'Understanding how constructive feedback helps us grow and why giving evaluations is as valuable as receiving them.',
-    author: 'David Kumar',
+    author: 'Abel Abaho',
     date: 'January 15, 2026',
-    image: 'https://images.unsplash.com/photo-1759922378092-14917cba3f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBzcGVha2luZyUyMHByZXNlbnRhdGlvbnxlbnwxfHx8fDE3NzA1OTU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://yestodreams.com/wp-content/uploads/2020/08/96799-toastmasters-evaluaton-form-img.jpg',
     fullArticle: `
       <p>Evaluation is the heartbeat of growth in the Gavel Club. It's what separates us from casual speaking clubs and makes us a true developmental organization. Yet many new members approach evaluations with trepidation—both giving and receiving them. Let me share why evaluations are actually your secret weapon for rapid improvement.</p>
 
