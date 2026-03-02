@@ -112,7 +112,7 @@ export function Footer() {
               <br />
               Built by{" "}
               <strong>
-              <span className="text-gradient-gold">
+              <span className="text-[#d6ab00]">
                 <a href="https://aabel.vercel.app/" target="_blank" rel="noopener noreferrer" className="developer-link">Abaho Abel Kambona</a>
               </span>
             </strong>
