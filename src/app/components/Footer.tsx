@@ -110,8 +110,12 @@ export function Footer() {
               © {currentYear} Gavel Club of Kyambogo. <br /> All rights
               reserved.
               <br />
-              Powered by{" "}
-              <strong className="text-[#d6ab00]">The Design Lab</strong>
+              Built by{" "}
+              <strong>
+              <span className="text-gradient-gold">
+                <a href="https://aabel.vercel.app/" target="_blank" rel="noopener noreferrer" className="developer-link">Abaho Abel Kambona</a>
+              </span>
+            </strong>
             </p>
 
             <div className="flex items-center gap-4 order-1 md:order-2">
