@@ -13,7 +13,7 @@ export function Navigation() {
     { path: '/meetings', label: 'Meetings' },
     { path: '/blogs', label: 'Blogs' },
     { path: '/cabinets', label: 'Cabinets' },
-    { path: '/constitution', label: 'Constitution' },
+    { path: '/constitution', label: 'Forms & Documents' },
     { path: '/roles', label: 'Roles' },
     { path: '/contact', label: 'Contact' },
   ];

@@ -3,25 +3,46 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export function Constitution() {
   const constitutionPdfUrl = "/documents/Gavel Club of Kyambogo_Constitution.pdf";
-
+  const evaluatorPdfUrl = "/documents/Gavel Club_Speech Evaluation Form.pdf"
   return (
     <div className="min-h-screen bg-white">
       <div className="bg-[#692528] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-4">Club Constitution</h1>
+          <h1 className="text-4xl md:text-5xl mb-4">Forms and Documents</h1>
           <p className="text-xl text-[#E0F3FF]">
-            Our guiding principles and bylaws
+            These documents define the structure and format of out weekly meetings <br />Take time and familiarise yourself with their contents
           </p>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+         <Card className="mb-12 border-2 border-[#692528]">
+          <CardHeader className="bg-[#E0F3FF]">
+            <CardTitle className="flex items-center gap-3 text-[#692528] text-2xl">
+              <FileText size={32} />
+              Gavel Club Speech Evaluation form
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <p className="text-gray-700 mb-6">
+              This form highlights the key points that every speech must cover. Whether you are preparing for a role as a speech evaluator, or are simply looking for pointers before your next speech, take time to look through this guide
+            </p>
+            <a
+              href={evaluatorPdfUrl}
+              download
+              className="inline-flex items-center gap-2 bg-[#692528] text-white px-6 py-3 rounded-lg hover:bg-[#8a3033] transition-colors"
+            >
+              <Download size={20} />
+              Download Evaluation Form (PDF)
+            </a>
+          </CardContent>
+        </Card>
         {/* Download Card */}
         <Card className="mb-12 border-2 border-[#692528]">
           <CardHeader className="bg-[#E0F3FF]">
             <CardTitle className="flex items-center gap-3 text-[#692528] text-2xl">
               <FileText size={32} />
-              Download the Gavel Club Constitution
+              Gavel Club Constitution
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6">
